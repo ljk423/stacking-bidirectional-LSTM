@@ -5,6 +5,8 @@ It is an integrated stacking model using https://machinelearningmastery.com/stac
 as baseline
 
 This model is using 3 bidirectional LSTM models for submodel and 1 bidirectional LSTM model for meta learner
+And Bidirectional LSTM layers are made by using CuDNNLSTM to use gpu.
+If you don't want to use gpu core, then just change CuDNNLSTM -> LSTM
 
 You must modify data preparation part and some input shapes to fit to your own data
 
